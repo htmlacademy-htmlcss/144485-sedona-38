@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Максим Розов](https://up.htmlacademy.ru/htmlcss/38/user/144485).
-* Наставник: `Неизвестно`.
+- Студент: [Максим Розов](https://up.htmlacademy.ru/htmlcss/38/user/144485).
+- Наставник: `Оксана Вайнруб`(https://htmlacademy.ru/profile/id166797).
 
 ---
 
