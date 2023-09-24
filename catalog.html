@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона - Каталог</title>
+  </head>
+
+  <body>
+
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-navigation-logo" href="#">
+          <img src="#" alt="Логотип">
+        </a>
+        <ul class="main-navigation-menu">
+          <li class="main-navigation-menu-item">
+            <a href="#" class="main-navigation-menu-link">Главная</a>
+          </li>
+          <li class="main-navigation-menu-item">
+            <a href="#" class="main-navigation-menu-link">О седоне</a>
+          </li>
+          <li class="main-navigation-menu-item">
+            <a href="#" class="main-navigation-menu-link">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="main-icon">
+          <li class="main-icon-item">
+            <a href="#" class="main-icon-link">
+              <span class="visually-hidden">поиск по сайту</span>
+            </a>
+          </li>
+          <li class="main-icon-item">
+            <a href="#" class="main-icon-link">
+              <span class="visually-hidden">избранное</span>
+              <span class="main-icon-quantity">12</span>
+            </a>
+          </li>
+        </ul>
+        <a href="#" class="btn btn-main">Хочу сюда!</a>
+      </nav>
+    </header>
+
+    <main class="catalog-page">
+
+      <section class="filter-hotel">
+        <h1 class="filter-hotel-title">Гостиницы Седоны</h1>
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs-list">
+            <li class="breadcrumbs-item">
+              <a href="index.html">
+                <img src="#" alt="">
+                <span class="visually-hidden">Переход на главную страницу</span>
+              </a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a>Гостиницы</a>
+            </li>
+          </ul>
+        </div>
+
+        <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
+
+        <form action="https://echo.htmlacademy.ru/" method="post" class="form-filter">
+
+          <fieldset class="form-filter-group">
+            <legend class="form-filter-title">Инфраструктура:</legend>
+            <ul class="form-filter-list">
+              <li class="form-filter-item">
+                <input type="checkbox" name="pool" id="pool" checked class="form-filter-input">
+                <label for="pool">Бассейн</label>
+              </li>
+              <li class="form-filter-item">
+                <input type="checkbox" name="parking" id="parking" checked class="form-filter-input">
+                <label for="parking">Парковка</label>
+              </li>
+              <li class="form-filter-item">
+                <input type="checkbox" name="wifi" id="wifi" class="form-filter-input">
+                <label for="wifi">Wi-Fi</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="form-filter-group">
+            <legend class="form-filter-title">Тип жилья:</legend>
+            <ul class="form-filter-list">
+              <li class="form-filter-item">
+                <input type="radio" name="type-housing" id="hotel" checked class="form-filter-input">
+                <label for="hotel">Гостиница</label>
+              </li>
+              <li class="form-filter-item">
+                <input type="radio" name="type-housing" id="motel" class="form-filter-input">
+                <label for="motel">Мотель</label>
+              </li>
+              <li class="form-filter-item">
+                <input type="radio" name="type-housing" id="apartments" class="form-filter-input">
+                <label for="apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="form-filter-group">
+            <legend class="form-filter-title">Стоимость, ₽:</legend>
+            <ul class="form-filter-list">
+              <li class="form-filter-item">
+                <input type="number" name="price-from" placeholder="от" class="form-filter-price-input">
+                <input type="number" name="price-up-to" placeholder="до" class="form-filter-price-input">
+              </li>
+              <li class="form-filter-item">
+                <input type="range" name="volume-price" min="0" max="11" />
+              </li>
+
+            </ul>
+          </fieldset>
+
+          <div class="filter-button">
+            <button type="submit" class="btn btn-secondary">Применить</button>
+            <button type="reset" class="btn btn-reset">Сбросить</button>
+          </div>
+
+
+        </form>
+
+      </section>
+
+    </main>
+
+    <footer class="main-footer">
+      <ul class="footer-social">
+        <li class="footer-social-item">
+          <a href="https://vk.com/htmlacademy" class="visually-hidden">
+            <span>перейти в нашу группу в Вконтакте</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a href="https://t.me/htmlacademy" class="visually-hidden">
+            <span>перейти в наш телеграмм канал</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a href="https://www.youtube.com/user/htmlacademyru" class="visually-hidden">
+            <span>перейти на наш канал на Youtube</span>
+          </a>
+        </li>
+      </ul>
+
+      <address class="contacts">
+        <a href="tel:+78128121212" class="footer-tel">+7 (812) 812-12-12</a>
+      </address>
+
+      <a href="https://htmlacademy.ru/">
+        <img src="#" alt="htmlacademy">
+        <span class="visually-hidden">перейти на сайт htmlacademy</span>
+      </a>
+    </footer>
+
+
+
+  </body>
+
+</html>
