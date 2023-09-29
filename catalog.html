@@ -3,6 +3,7 @@
 
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Седона - Каталог</title>
   </head>
 
@@ -44,6 +45,7 @@
     <main class="catalog-page">
 
       <section class="filter-hotel">
+
         <h1 class="filter-hotel-title">Гостиницы Седоны</h1>
 
         <ul class="breadcrumbs">
@@ -103,8 +105,12 @@
             <legend class="form-filter-title">Стоимость, ₽:</legend>
             <ul class="form-filter-list">
               <li class="form-filter-item">
-                <input type="number" name="price-from" placeholder="от" class="form-filter-price-input">
-                <input type="number" name="price-up-to" placeholder="до" class="form-filter-price-input">
+
+                <input type="number" name="price-from" id="from" class="form-filter-price-input">
+                <label for="from">от</label>
+
+                <input type="number" name="price-up-to" id="up-to" class="form-filter-price-input">
+                <label for="up-to">до</label>
               </li>
               <li class="form-filter-item">
                 <input type="range" name="volume-price" min="0" max="11" class="form-filter-price-range">
@@ -112,17 +118,16 @@
             </ul>
           </fieldset>
 
-          <div class="filter-button">
-            <button type="submit" class="btn btn-secondary">Применить</button>
-            <button type="reset" class="btn btn-reset">Сбросить</button>
-          </div>
+          <button type="submit" class="btn btn-secondary">Применить</button>
+          <button type="reset" class="btn btn-reset">Сбросить</button>
+
         </form>
 
       </section>
 
       <section class="result-search">
         <h2 class="visually-hidden">Результат поиска</h2>
-        <div class="console-panel-title">Найдено гостиниц: 38</div>
+        <p class="console-panel-title">Найдено гостиниц: 38</p>
         <select name="select-filter" class="console-panel-select" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
@@ -153,8 +158,11 @@
             <a href="#" class="search-card-link">
               <img src="images/catalog/hotel-1.jpg" width="300" height="212"
                 alt="Звездное, синеее небо с видом из ущелья." class="search-card-img">
+            </a>
+            <a href="#">
               <h3 class="search-card-title">Amara Resort & Spa</h3>
             </a>
+
             <div class="search-card-contant">
               <span class="search-card-contant-title">Гостиница</span>
               <b class="search-card-contant-price">От 4000 ₽</b>
@@ -170,6 +178,8 @@
             <a href="#" class="search-card-link">
               <img src="images/catalog/hotel-2.jpg" width="300" height="212" alt="Над каньоном темные тучи с радугой."
                 class="search-card-img">
+            </a>
+            <a href="#">
               <h3 class="search-card-title">Villas at Poco Diablo</h3>
             </a>
             <div class="search-card-contant">
@@ -187,6 +197,8 @@
             <a href="#" class="search-card-link">
               <img src="images/catalog/hotel-3.jpg" width="300" height="212"
                 alt="Зелень, коричневый огромный каньон и синее небо с белыми облаками." class="search-card-img">
+            </a>
+            <a href="#">
               <h3 class="search-card-title">Desert Quail Inn</h3>
             </a>
             <div class="search-card-contant">
@@ -204,6 +216,8 @@
             <a href="#" class="search-card-link">
               <img src="images/catalog/hotel-4.jpg" width="300" height="212"
                 alt="Невероятно темное со звездами небо с видом на каньон на закате. " class="search-card-img">
+            </a>
+            <a href="#">
               <h3 class="search-card-title">GreenTree Inn</h3>
             </a>
             <div class="search-card-contant">
