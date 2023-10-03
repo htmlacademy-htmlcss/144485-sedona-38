@@ -1,3 +1,6 @@
+
+/* PT Sans */
+
 @font-face {
   font-family:"PT Sans";
   font-style: normal;
@@ -12,4 +15,164 @@
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
+}
+
+body{
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000;
+  background-color: #ffff;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.btn{
+  font-weight: 700;
+  line-height: 20px;
+  color: #ffff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+}
+.btn-main{
+  background-color:  #756157;
+}
+.btn-secondary{
+  background-color: #82B3D3;
+}
+.title-main{
+  color: #000;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.title-main-light{
+  color: #fff;
+}
+.description-main{
+  color: #333;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+
+}
+.description-main-light{
+  color: #fff;
+}
+.main-header{
+  background-color: #ffff;
+  color: #000;
+}
+.main-menu-link{
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.welcome-block{
+  height: 485px;
+  background-image:url("../images/index-decoration.svg"), url("../images/index-background.jpg");
+  background-repeat: no-repeat;
+  background-size: contain,cover ;
+  background-position: center bottom;
+  background-color: #2672c3;
+  color: #000;
+}
+/* advantage */
+.advantage-title{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.advantage-description{
+  color: #333;
+  text-align: center;
+  font-size: 22px;
+  line-height: 26px;
+}
+.advantage-card {
+  text-align: center;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+/* advantage - модификаторы */
+
+.advantage-card-blue.advantage-card{
+  background-color: #82B3D3;
+}
+.advantage-card-blue .advantage-card-title,
+.advantage-card-blue .advantage-card-description{
+  color: #fff;
+}
+.advantage-card-light-blue.advantage-card{
+  background-color: rgba(131, 179, 211, 0.20);
+}
+
+/* quality */
+.quality-item{
+  text-align: center;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.quality-item-title{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.quality-item-description{
+  color: #333;
+}
+/* quality модификатор */
+
+.quality-item-light.quality-item{
+  background-color: #fff;
+}
+
+/* subscribe */
+
+.subscribe{
+  background-image: url("../images/subscribe-backgraund.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #2672c3;
+  color: #000;
+  text-align: center;
+}
+.subscribe-form-input{
+  border-radius: 4px 0 0 4px;
+  background: #F2F2F2;
+}
+
+/* footer */
+
+.footer-tel{
+  color: #000;
+  font-size: 40px;
+  font-style: normal;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
