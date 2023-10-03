@@ -25,6 +25,7 @@ body{
   line-height: 21px;
   color: #000;
   background-color: #ffff;
+  margin: 0;
 }
 
 .visually-hidden {
@@ -39,7 +40,7 @@ body{
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+/* buttons */
 .btn{
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
@@ -51,6 +52,7 @@ body{
   text-transform: uppercase;
   text-decoration: none;
   border: none;
+  display: inline-block;
 }
 .btn-main{
   background-color:  #756157;
@@ -61,6 +63,7 @@ body{
 .btn-reset{
   background-color: transparent;
 }
+
 .title-main{
   color: #000;
   font-size: 30px;
@@ -82,9 +85,15 @@ body{
 .description-main-light{
   color: #fff;
 }
+/* header */
 .main-header{
   background-color: #ffff;
   color: #000;
+}
+.main-menu{
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .main-menu-link{
   color: #000;
@@ -95,7 +104,13 @@ body{
   text-decoration: none;
   text-transform: capitalize;
 }
+.main-icon{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
+/* hero */
 .welcome-block{
   height: 485px;
   background-image:url("../images/index-decoration.svg"), url("../images/index-background.jpg");
@@ -106,6 +121,11 @@ body{
   color: #000;
 }
 /* advantage */
+.advantage-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 .advantage-title{
   font-size: 30px;
   font-weight: 700;
@@ -138,6 +158,11 @@ body{
 }
 
 /* quality */
+.quality-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 .quality-item{
   text-align: center;
   background-color: rgba(131, 179, 211, 0.12);
@@ -182,6 +207,11 @@ body{
 }
 
 /* footer */
+.footer-social{
+  list-style: none;
+  padding: 0;
+  padding: 0;
+}
 
 .footer-tel{
   color: #000;
@@ -193,6 +223,20 @@ body{
 }
 
 /* catalog-page */
+
+/* breadcrumbs */
+
+.breadcrumbs{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.breadcrumbs-link{
+  color: #FFF;
+  font-size: 16px;
+}
+
+/* filters */
 
 .filter-hotel{
   background-image: url("../images/subscribe-backgraund.jpg");
@@ -209,14 +253,18 @@ body{
   font-weight: 700;
   line-height: 78px;
 }
-.breadcrumbs-link{
-  color: #FFF;
-  font-size: 16px;
-}
+
+/* forms */
 
 .form-filter{
   color:  #FFF;
 }
+.form-filter-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .form-filter-title{
   font-size: 20px;
   font-style: normal;
