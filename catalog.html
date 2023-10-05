@@ -11,18 +11,18 @@
 
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-navigation-logo" href="index.html">
+        <a class="main-logo" href="index.html">
           <img src="images/logo.svg" width="140" height="70" alt="Логотип City of Sedona.">
         </a>
-        <ul class="main-navigation-menu">
-          <li class="main-navigation-menu-item">
-            <a href="index.html" class="main-navigation-menu-link">Главная</a>
+        <ul class="main-menu">
+          <li class="main-menu-item">
+            <a href="#" class="main-menu-link">Главная</a>
           </li>
-          <li class="main-navigation-menu-item">
-            <a href="#" class="main-navigation-menu-link">О седоне</a>
+          <li class="main-menu-item">
+            <a href="#" class="main-menu-link">О Cедоне</a>
           </li>
-          <li class="main-navigation-menu-item">
-            <a href="#" class="main-navigation-menu-link">Гостиницы</a>
+          <li class="main-menu-item">
+            <a href="catalog.html" class="main-menu-link">Гостиницы</a>
           </li>
         </ul>
         <ul class="main-icon">
@@ -107,10 +107,10 @@
               <li class="form-filter-item">
 
                 <input type="number" name="price-from" id="from" class="form-filter-price-input">
-                <label for="from">от</label>
+                <label for="from" class="form-filter-price">от</label>
 
                 <input type="number" name="price-up-to" id="up-to" class="form-filter-price-input">
-                <label for="up-to">до</label>
+                <label for="up-to" class="form-filter-price">до</label>
               </li>
               <li class="form-filter-item">
                 <input type="range" name="volume-price" min="0" max="11" class="form-filter-price-range">
@@ -256,13 +256,15 @@
         </ul>
       </section>
 
+      <!-- subscribe -->
+
       <section class="subscribe subscribe-light">
         <h2 class="subscribe-title title-main">Подпишитесь на рассылку</h2>
         <p class="subscribe-discription description-main">Только полезная информация и никакого спама, честное
           бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" method="post" class="subscribe-form">
           <input type="email" name="email" placeholder="Ваш e-mail" required class="subscribe-form-input">
-          <button type="submit" class="btn btn-secondary">Подписаться</button>
+          <button type="submit" class="btn btn-secondary subscribe-button">Подписаться</button>
         </form>
       </section>
 
