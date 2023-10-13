@@ -109,7 +109,6 @@ body{
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-
 }
 
 .description-main-light{
@@ -131,9 +130,24 @@ body{
   align-items: center;
 }
 
+/* logo */
+
+.main-logo{
+  display: block;
+  position: relative;
+  margin-bottom: -6px;
+  margin-right: 28px;
+  z-index: 2;
+}
+
+.main-logo img{
+  display: block;
+}
+
 /* main-menu */
 
 .main-menu{
+  display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -146,12 +160,23 @@ body{
   font-weight: 700;
   line-height: 24px;
   text-align: center;
+  padding: 20px 16px;
   text-decoration: none;
   text-transform: capitalize;
 }
 
+/* main-icons */
+
+.main-icon-item{
+  margin-right: 24px;
+}
+
+.main-icon-item:last-child{
+  margin-right: 32px;
+}
+
 .main-icon{
-  display: inline-block;
+  display: block;
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -163,6 +188,7 @@ body{
 }
 
 .main-icon-heart{
+  position: relative;
   width: 20px;
   height: 20px;
   background-image: url("../images/heart.svg");
@@ -176,10 +202,20 @@ body{
 }
 
 .main-icon-quantity{
+  position: absolute;
+  top: -10px;
+  left: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
   color: #FFF;
   text-align: center;
   font-size: 10px;
   line-height: 10px;
+  background-color: #7DB54F;
+  border-radius: 50%;
 }
 
 /* hero */
@@ -192,6 +228,9 @@ body{
   background-position: center bottom;
   background-color: #2672c3;
   color: #000;
+  padding-top: 51px;
+  padding-bottom: 100px;
+  box-sizing: border-box;
 }
 
 .welcome-block-image{
@@ -200,6 +239,10 @@ body{
 }
 
 /* advantage */
+
+.advantage{
+  padding-top: 69px;
+}
 
 .advantage-list{
   list-style: none;
@@ -211,7 +254,8 @@ body{
 
 .advantage-title{
   width: 620px;
-  margin: auto;
+  margin: 0 auto;
+  margin-bottom: 25px;
 }
 
 .advantage-description{
@@ -220,7 +264,8 @@ body{
   font-size: 22px;
   line-height: 26px;
   width: 651px;
-  margin: auto;
+  margin: 0 auto;
+  margin-bottom: 90px;
 }
 
 .advantage-card {
@@ -231,7 +276,7 @@ body{
 
 .advantage-card-content{
   width: 400px;
-  padding: 0 85px;
+  padding: 103px 85px;
   box-sizing: border-box;
 }
 
@@ -240,9 +285,27 @@ body{
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 0;
+}
+
+.advantage-card-title::after{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.30);
+  margin: 30px auto;
+}
+
+.advantage-card-description{
+  margin: 0;
 }
 
 /* advantage - модификаторы */
+
+.advantage-card-blue .advantage-card-title::after{
+  background-color: rgba(255, 255, 255, 0.30);
+}
 
 .advantage-card-blue.advantage-card{
   background-color: #82B3D3;
@@ -257,7 +320,28 @@ body{
   background-color: rgba(131, 179, 211, 0.20);
 }
 
+
+
 /* quality */
+
+.quality{
+  padding-top: 64px;
+}
+
+
+
+.quality-title{
+  width: 620px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.quality-description{
+  width: 651px;
+  margin: 0 auto;
+  margin-bottom: 64px;
+
+}
 
 .quality-list{
   list-style: none;
@@ -268,20 +352,10 @@ body{
 
 .quality-item{
   width: 400px;
-  padding: 0 85px;
+  padding: 80px 85px;
   text-align: center;
   background-color: rgba(131, 179, 211, 0.12);
   box-sizing: border-box;
-}
-
-.quality-title{
-  width: 620px;
-  margin: 0 auto;
-}
-
-.quality-description{
-  width: 651px;
-  margin: 0 auto;
 }
 
 .quality-item-title{
@@ -289,10 +363,36 @@ body{
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.quality-item::before{
+  content: "";
+  display: block;
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.icon-home::before{
+  background-image: url("../images/home-icon.svg");
+}
+
+.icon-food::before{
+  background-image: url("../images/food-icon.svg");
+}
+
+.icon-gift::before{
+  background-image: url("../images/gift-icon.svg");
 }
 
 .quality-item-description{
   color: #333;
+  margin: 0;
 }
 
 /* quality модификатор */
