@@ -22,13 +22,13 @@
           </a>
           <ul class="main-menu">
             <li class="main-menu-item">
-              <a class="main-menu-link" href="#">Главная</a>
+              <a class="main-menu-link" href="index.html">Главная</a>
             </li>
             <li class="main-menu-item">
               <a class="main-menu-link" href="#">О Cедоне</a>
             </li>
             <li class="main-menu-item">
-              <a class="main-menu-link" href="catalog.html">Гостиницы</a>
+              <a class="main-menu-link menu-link-active" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="main-icon-list">
@@ -56,17 +56,14 @@
 
           <!-- breadcrumbs -->
 
-          <ul class="breadcrumbs">
+          <ol class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link home-link" href="index.html">
-                <img src="#" alt="">
                 <span class="visually-hidden">Переход на главную страницу</span>
               </a>
             </li>
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">Гостиницы</a>
-            </li>
-          </ul>
+            <li class="breadcrumbs-item"><a class="breadcrumbs-link">Гостиницы</a></li>
+          </ol>
 
 
           <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
@@ -111,17 +108,17 @@
 
             <fieldset class="form-filter-group">
               <legend class="form-filter-title">Стоимость, ₽:</legend>
-              <ul class="form-filter-list">
-                <li class="form-filter-item">
+              <div class="form-filter-list">
+                <div class="form-filter-item">
                   <input class="form-filter-price-input" id="from" type="number" name="price-from">
                   <label class="form-filter-price" for="from">от</label>
                   <input class="form-filter-price-input" id="up-to" type="number" name="price-up-to">
                   <label class="form-filter-price" for="up-to">до</label>
-                </li>
-                <li class="form-filter-item">
+                </div>
+                <div class="form-filter-item">
                   <input class="form-filter-price-range" type="range" name="volume-price" min="0" max="11">
-                </li>
-              </ul>
+                </div>
+              </div>
             </fieldset>
             <div class="form-filter-buttons">
               <button class="btn btn-secondary" type="submit">Применить</button>
@@ -160,85 +157,83 @@
             </ul>
           </div>
           <ul class="search-list">
-            <li class="search-card">
-              <a class="search-card-link" href="#">
-                <img class="search-card-img" src="images/catalog/hotel-1.jpg" width="300" height="212"
-                  alt="Звездное, синеее небо с видом из ущелья.">
-              </a>
-              <a class="search-card-link" href="#">
-                <h3 class="search-card-title">Amara Resort & Spa</h3>
-              </a>
-
-              <div class="search-card-contant">
+            <li class="search-list-item">
+              <div class="search-card">
+                <a class="search-card-img" href="#">
+                  <img src="images/catalog/hotel-1.jpg" width="300" height="212"
+                    alt="Звездное, синеее небо с видом из ущелья.">
+                </a>
+                <a class="search-card-link" href="#">
+                  <h3 class="search-card-title">Amara Resort & Spa</h3>
+                </a>
                 <span class="search-card-contant-title">Гостиница</span>
                 <span class="search-card-contant-price">От 4000 ₽</span>
-              </div>
-              <a class="btn btn-main" href="#">подробнее</a>
-              <button class="btn btn-secondary" type="button">в избранное</button>
-              <div class="search-card-rating">
-                <img src="images/stars-rating-four.svg" alt="Звезд рейтинга - четыре.">
+                <a class="btn btn-main btn-search-card" href="#">Подробнее</a>
+                <button class="btn btn-secondary btn-search-card" type="button">В избранное</button>
+                <div class="card-rating-img">
+                  <img src="images/stars-rating-four.svg" alt="Звезд рейтинга - четыре.">
+                </div>
                 <span class="card-rating">Рейтинг: 8,5</span>
               </div>
             </li>
-            <li class="search-card">
-              <a class="search-card-link" href="#">
-                <img class="search-card-img" src="images/catalog/hotel-2.jpg" width="300" height="212"
-                  alt="Над каньоном темные тучи с радугой.">
-              </a>
-              <a class="search-card-link" href="#">
-                <h3 class="search-card-title">Villas at Poco Diablo</h3>
-              </a>
-              <div class="search-card-contant">
+            <li class="search-list-item">
+              <div class="search-card">
+                <a class="search-card-img" href="#">
+                  <img src="images/catalog/hotel-2.jpg" width="300" height="212"
+                    alt="Звездное, синеее небо с видом из ущелья.">
+                </a>
+                <a class="search-card-link" href="#">
+                  <h3 class="search-card-title">Villas at Poco Diablo</h3>
+                </a>
                 <span class="search-card-contant-title">Гостиница</span>
                 <span class="search-card-contant-price">От 5000 ₽</span>
-              </div>
-              <a class="btn btn-main" href="#">подробнее</a>
-              <button class="btn btn-secondary btn-secondary-active" type="button">в избранном</button>
-              <div class="search-card-rating">
-                <img src="images/stars-rating-four.svg" alt="Звезд рейтинга - четыре.">
+                <a class="btn btn-main btn-search-card" href="#">Подробнее</a>
+                <button class="btn btn-secondary btn-search-card" type="button">В избранное</button>
+                <div class="card-rating-img">
+                  <img src="images/stars-rating-four.svg" alt="Звезд рейтинга - четыре.">
+                </div>
                 <span class="card-rating">Рейтинг: 9,2</span>
               </div>
             </li>
-            <li class="search-card">
-              <a class="search-card-link" href="#">
-                <img class="search-card-img" src="images/catalog/hotel-3.jpg" width="300" height="212"
-                  alt="Зелень, коричневый огромный каньон и синее небо с белыми облаками.">
-              </a>
-              <a class="search-card-link" href="#">
-                <h3 class="search-card-title">Desert Quail Inn</h3>
-              </a>
-              <div class="search-card-contant">
+            <li class="search-list-item">
+              <div class="search-card">
+                <a class="search-card-img" href="#">
+                  <img src="images/catalog/hotel-3.jpg" width="300" height="212"
+                    alt="Звездное, синеее небо с видом из ущелья.">
+                </a>
+                <a class="search-card-link" href="#">
+                  <h3 class="search-card-title">Desert Quail Inn</h3>
+                </a>
                 <span class="search-card-contant-title">Гостиница</span>
                 <span class="search-card-contant-price">От 2500 ₽</span>
-              </div>
-              <a class="btn btn-main" href="#">подробнее</a>
-              <button class="btn btn-secondary btn-active" type="button">в избранное</button>
-              <div class="search-card-rating">
-                <img src="images/stars-rating-three.svg" alt="Звезд рейтинга - три.">
+                <a class="btn btn-main btn-search-card" href="#">Подробнее</a>
+                <button class="btn btn-secondary btn-search-card" type="button">В избранное</button>
+                <div class="card-rating-img">
+                  <img src="images/stars-rating-three.svg" alt="Звезд рейтинга - три.">
+                </div>
                 <span class="card-rating">Рейтинг: 6,9</span>
               </div>
             </li>
-            <li class="search-card">
-              <a class="search-card-link" href="#">
-                <img class="search-card-img" src="images/catalog/hotel-4.jpg" width="300" height="212"
-                  alt="Невероятно темное со звездами небо с видом на каньон на закате.">
-              </a>
-              <a class="search-card-link" href="#">
-                <h3 class="search-card-title">GreenTree Inn</h3>
-              </a>
-              <div class="search-card-contant">
+            <li class="search-list-item">
+              <div class="search-card">
+                <a class="search-card-img" href="#">
+                  <img src="images/catalog/hotel-4.jpg" width="300" height="212"
+                    alt="Звездное, синеее небо с видом из ущелья.">
+                </a>
+                <a class="search-card-link" href="#">
+                  <h3 class="search-card-title">GreenTree Inn</h3>
+                </a>
                 <span class="search-card-contant-title">Гостиница</span>
                 <span class="search-card-contant-price">От 1500 ₽</span>
-              </div>
-              <a class="btn btn-main" href="#">подробнее</a>
-              <button class="btn btn-secondary" type="button">в избранное</button>
-              <div class="search-card-rating">
-                <img src="images/stars-rating-two.svg" alt="Звезд рейтинга - две.">
+                <a class="btn btn-main btn-search-card" href="#">Подробнее</a>
+                <button class="btn btn-secondary btn-search-card" type="button">В избранное</button>
+                <div class="card-rating-img">
+                  <img src="images/stars-rating-two.svg" alt="Звезд рейтинга - две.">
+                </div>
                 <span class="card-rating">Рейтинг: 5,0</span>
               </div>
             </li>
           </ul>
-          <hr>
 
           <!-- pagination -->
 
@@ -268,7 +263,7 @@
 
         <section class="subscribe subscribe-light">
           <h2 class="subscribe-title title-main">Подпишитесь на рассылку</h2>
-          <p class="subscribe-discription description-main">Только полезная информация и никакого спама, честное
+          <p class="subscribe-description description-main">Только полезная информация и никакого спама, честное
             бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="subscribe-form-input" type="email" name="email" placeholder="Ваш e-mail" required>
