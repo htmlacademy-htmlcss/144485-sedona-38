@@ -459,6 +459,10 @@ border-bottom: 2px solid #756257;
   box-sizing: border-box;
 }
 
+.quality-item:nth-child(odd){
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
 .quality-item-title{
   font-size: 24px;
   font-weight: 700;
