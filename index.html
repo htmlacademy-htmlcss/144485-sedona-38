@@ -8,7 +8,7 @@
     <title>HTML Academy: Седона</title>
   </head>
 
-  <body>
+  <body class="none-scroll">
 
     <!-- wrapper -->
 
@@ -108,22 +108,22 @@
 
         <section class="quality">
           <h2 class="visually-hidden">Качество обслуживания</h2>
-          <p class="quality-title title-main">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+          <p class="quality-title title-main">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</p>
           <p class="quality-description description-main">Опытный персонал и качественное обслуживание!</p>
           <ul class="quality-list">
             <li class="quality-item icon-home">
               <h3 class="quality-item-title">Жильё</h3>
-              <p class="quality-item-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <p class="quality-item-description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
             </li>
             <li class="quality-item icon-food">
               <h3 class="quality-item-title">Еда</h3>
-              <p class="quality-item-description">Всегда заказывайте топовый фирменный бургер, вы не
+              <p class="quality-item-description">Всегда заказывайте<br> топовый фирменный бургер, вы не
                 разочаруетесь!
               </p>
             </li>
             <li class="quality-item icon-gift">
               <h3 class="quality-item-title">Сувениры</h3>
-              <p class="quality-item-description">Не только китайского, но и настоящего местного производства!</p>
+              <p class="quality-item-description">Не только китайского,<br> но и настоящего местного производства!</p>
             </li>
           </ul>
         </section>
@@ -131,7 +131,7 @@
         <section class="search-hotel">
           <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
           <p class="search-hotel-title title-main">Заинтересовались?</p>
-          <p class="search-hotel-description description-main">Укажите предполагаемые даты поездки, и мы покажем вам
+          <p class="search-hotel-description description-main">Укажите предполагаемые даты поездки,<br> и мы покажем вам
             лучшие предложения
             гостиниц в Седоне</p>
           <a class="btn btn-main search-hotel-button" href="#">Поиск гостиницы в Седоне</a>
@@ -214,17 +214,14 @@
       <div class="modal-block modal-none">
         <div class="modal-window">
           <button class="modal-close" type="button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <path
-                d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z"
-                fill="black" />
-            </svg>
             <span class="visually-hidden">Закрыть</span>
           </button>
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="modal-input-group">
-              <label class="modal-label" for="arrival-date">Дата заезда:</label>
+              <div class="xxx">
+                <label class="modal-label" for="arrival-date">Дата заезда:</label>
+              </div>
               <input class="modal-input" type="text" name="arrival-date" id="arrival-date" placeholder="27 апреля 2020"
                 required>
               <p class="info-text error-text">Мы не можем отправить вас в прошлое.</p>
@@ -240,42 +237,42 @@
               <div class="modal-input-group modal-person">
                 <label class="modal-label" for="adults">Взрослые:</label>
                 <div class="modal-person-group">
-                  <input class="modal-person-input" type="number" name="adults" id="adults" placeholder="2" value="2"
-                    required>
                   <button class="button-person button-person-minus" type="button">
-                    <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
+                    <svg width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z" />
                     </svg>
-
                   </button>
+                  <input class="modal-person-input" type="number" name="adults" id="adults" placeholder="2" value="2"
+                    max="99" required>
                   <button class="button-person button-person-plus" type="button">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
+                    <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
                     </svg>
                   </button>
                 </div>
               </div>
               <div class="modal-input-group modal-person">
-                <div class="form-lable">
+                <div class="form-label">
                   <label class="modal-label" for="children">Дети:</label>
-                  <span class="tooltip">
-                    <button class="tooltip-toggle" type="button">
+                  <div class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
                     </button>
-                    <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до
-                      18 лет. Дети до 6 лет размещаются бесплатно.</span>
-                  </span>
+                    <p class="tooltip-text" rol="tooltip" id="tooltip-label">Укажите количество детей, которые будут с
+                      вами, возраст которых от 6 до
+                      18 лет. Дети до 6 лет размещаются бесплатно.</p>
+                  </div>
                 </div>
                 <div class="modal-person-group">
-                  <input class="modal-person-input" type="number" name="children" id="children" placeholder="2"
-                    value="2" required>
                   <button class="button-person button-person-minus" type="button">
-                    <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
+                    <svg width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z" />
                     </svg>
                   </button>
+                  <input class="modal-person-input" type="number" name="children" id="children" placeholder="2"
+                    value="2" max="99" required>
                   <button class="button-person button-person-plus" type="button">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
+                    <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
                     </svg>
                   </button>
                 </div>
