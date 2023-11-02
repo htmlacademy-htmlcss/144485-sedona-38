@@ -8,7 +8,7 @@
     <title>HTML Academy: Седона</title>
   </head>
 
-  <body class="none-scroll">
+  <body>
 
     <!-- wrapper -->
 
@@ -22,13 +22,13 @@
             <img src="images/logo.svg" width="140" height="70" alt="Логотип City of Sedona.">
           </a>
           <ul class="main-menu">
-            <li class="main-menu-item">
+            <li>
               <a class="main-menu-link menu-link-active" href="index.html">Главная</a>
             </li>
-            <li class="main-menu-item">
+            <li>
               <a class="main-menu-link" href="#">О Cедоне</a>
             </li>
-            <li class="main-menu-item">
+            <li>
               <a class="main-menu-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
@@ -53,7 +53,7 @@
 
       <!-- main -->
 
-      <main class="main-page main-inner">
+      <main class="main-inner">
         <section class="welcome-block">
           <h1 class="visually-hidden">Туристические поездки в город Седона</h1>
           <img class="welcome-block-image" src="images/welcome.svg" width="458" height="352"
@@ -155,17 +155,17 @@
       <footer class="main-footer">
         <ul class="footer-social">
           <li class="footer-social-item">
-            <a class="footer-social-link icon-social icon-vk" href="https://vk.com/htmlacademy">
+            <a class="icon-social icon-vk" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">перейти в нашу группу в Вконтакте</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-social-link icon-social icon-telegram" href="https://t.me/htmlacademy">
+            <a class="icon-social icon-telegram" href="https://t.me/htmlacademy">
               <span class="visually-hidden">перейти в наш телеграм канал</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-social-link icon-social icon-youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="icon-social icon-youtube" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">перейти на наш канал на Youtube</span>
             </a>
           </li>
@@ -219,9 +219,7 @@
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="modal-input-group">
-              <div class="xxx">
-                <label class="modal-label" for="arrival-date">Дата заезда:</label>
-              </div>
+              <label class="modal-label" for="arrival-date">Дата заезда:</label>
               <input class="modal-input" type="text" name="arrival-date" id="arrival-date" placeholder="27 апреля 2020"
                 required>
               <p class="info-text error-text">Мы не можем отправить вас в прошлое.</p>

@@ -323,10 +323,7 @@ body{
   background-position: center bottom;
   background-color: #2672c3;
   color: #000;
-  padding-left: 70px;
-  padding-right: 70px;
-  padding-top: 51px;
-  padding-bottom: 81px;
+  padding: 51px 70px 81px 70px;
   box-sizing: border-box;
 }
 
@@ -917,7 +914,7 @@ body{
 }
 
 .range-button-left {
-left: 0;
+  left: 0;
 }
 
 .range-button-right {
@@ -1017,7 +1014,6 @@ left: 0;
 
 .console-select{
   width: 280px;
-  /* height: 38px; */
   margin-right: 70px;
 }
 .console-panel-select + .console-panel-select{
@@ -1194,6 +1190,7 @@ left: 0;
 }
 
 /* pagination */
+
 .pagination{
   display: flex;
   flex-wrap: wrap;
@@ -1265,7 +1262,7 @@ left: 0;
 }
 
 .modal-none{
-  /* display: none; */
+  display: none;
 }
 
 .modal-window{
@@ -1352,7 +1349,6 @@ left: 0;
   color: #000;
   font-weight: 700;
   line-height: 24px;
-  /* margin-bottom: 2px; */
   padding: 10px 19px;
   padding-right: 50px;
   border: none;
@@ -1581,12 +1577,6 @@ left: 0;
 .tooltip-toggle:focus + .tooltip-text{
   display: block;
 }
-
-
-.none-scroll{
-  overflow: hidden;
-}
-
 
 .modal-form{
   display: grid;
