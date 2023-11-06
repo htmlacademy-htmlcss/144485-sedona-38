@@ -228,6 +228,10 @@ body{
   z-index: 2;
 }
 
+.main-menu-link:active{
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .main-menu-link:hover::after,
 .main-menu-link.menu-link-active::after{
   content: "";
@@ -264,6 +268,16 @@ body{
   display: block;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.main-icon:hover,
+.main-icon:focus{
+  opacity: 0.6;
+}
+
+.main-icon:active
+{
+  opacity: 0.3;
 }
 
 .main-icon-search{
@@ -695,13 +709,16 @@ body{
   display: block;
 }
 
-.footer-academy-image:hover,
-.footer-academy-image:focus{
+.footer-academy-link:hover svg{
   fill: #756157;
 }
 
-.footer-academy-image:active{
-  fill:rgba(117, 97, 87, 0.3) ;
+.footer-academy-link:focus svg{
+  fill: #756157;
+}
+
+.footer-academy-link:active svg{
+  fill:rgba(117, 97, 87, 0.3);
 }
 
 /* catalog-page */
@@ -911,6 +928,10 @@ body{
   background-color: #FFF;
   cursor: pointer;
 }
+.range-button:hover,
+.range-button:focus{
+  background-color: #E5E5E5;
+}
 
 .range-button-left {
   left: 0;
@@ -981,7 +1002,8 @@ body{
   opacity: 0.3;
   position: absolute;
   right: 20px;
-  top: 12px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .form-filter-buttons{
@@ -1147,7 +1169,11 @@ body{
 .search-card-contant{
   flex-grow: 1;
 }
-
+.search-contant-title{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
 .search-card-contant-title{
   width: 170px;
 }
@@ -1167,6 +1193,8 @@ body{
 .search-card-link{
   color: #000;
   text-decoration: none;
+  padding: 2px 0;
+  margin: -2px 0;
 }
 
 .card-rating-block img{
@@ -1328,16 +1356,12 @@ body{
   flex-wrap: wrap;
 }
 
-.modal-input-group:nth-child(2) label{
-  margin-right: 19px;
-}
-
 .modal-label{
+  width: 135px;
   font-size: 20px;
   font-weight: 700;
   line-height: 33px;
   text-transform: capitalize;
-  margin-right: 25px;
 }
 
 .modal-input{
@@ -1348,7 +1372,7 @@ body{
   color: #000;
   font-weight: 700;
   line-height: 24px;
-  padding: 10px 19px;
+  padding: 23px 21px;
   padding-right: 50px;
   border: none;
   box-sizing: border-box;
@@ -1406,14 +1430,6 @@ body{
   align-items: center;
   justify-content: space-between;
   grid-column: 1/-1;
-}
-
-.modal-person + .modal-person{
-  margin-left: 81px;
-}
-.modal-person label{
-  margin-right: 45px;
-  position: relative;
 }
 
 .modal-person-group {
@@ -1521,11 +1537,11 @@ body{
 
 .form-label{
   position: relative;
-  margin-right: 63px;
+  margin-right: 83px;
 }
 .tooltip{
   position: absolute;
-  right: -18px;
+  right: -37px;
   top: 3px;
 }
 
