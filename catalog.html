@@ -10,11 +10,8 @@
   </head>
 
   <body>
-
     <!-- wrapper -->
-
     <div class="wrapper">
-
       <!-- header -->
       <header class="main-header" data-test="header">
         <nav class="main-navigation">
@@ -23,13 +20,13 @@
           </a>
           <ul class="main-menu">
             <li>
-              <a class="main-menu-link" href="index.html">Главная</a>
+              <a class="main-menu-link menu-link-active" href="index.html">Главная</a>
             </li>
             <li>
               <a class="main-menu-link" href="#">О Cедоне</a>
             </li>
             <li>
-              <a class="main-menu-link menu-link-active" href="catalog.html">Гостиницы</a>
+              <a class="main-menu-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <div class="main-icon-block">
@@ -50,28 +47,23 @@
           </div>
         </nav>
       </header>
-
       <!-- main -->
-
       <main class="main-inner" data-test="main">
-
         <section class="filter-hotel" data-test="filter">
           <h1 class="filter-hotel-title">Гостиницы Седоны</h1>
-
           <!-- breadcrumbs -->
-
           <ol class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link home-link" href="index.html">
                 <span class="visually-hidden">Переход на главную страницу</span>
               </a>
             </li>
-            <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Гостиницы</a></li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="#">Гостиницы</a>
+            </li>
           </ol>
-
           <!-- filter -->
           <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
-
           <form class="form-filter" action="https://echo.htmlacademy.ru/" method="post">
             <div class="form-filter-title">Инфраструктура:</div>
             <ul class="form-filter-list filter-grid-2">
@@ -138,9 +130,11 @@
               <div class="range-scale">
                 <div class="range-bar" style="left: 0; width: 80%;">
                   <button class="range-button range-button-left" type="button">
-                    <span></span>
+                    <span class="visually-hidden">Стоимость от</span>
                   </button>
-                  <button class="range-button range-button-right" type="button"></button>
+                  <button class="range-button range-button-right" type="button">
+                    <span class="visually-hidden">Стоимость до</span>
+                  </button>
                 </div>
               </div>
             </div>
@@ -149,21 +143,17 @@
               <button class="btn btn-reset" type="reset">Сбросить</button>
             </div>
           </form>
-
         </section>
-
         <section class="result-search" data-test="catalog">
           <h2 class="visually-hidden">Результат поиска</h2>
           <div class="console-panel">
             <p class="console-panel-title title-main">Найдено гостиниц: 38</p>
-
             <div class="console-select">
               <select class="console-panel-select" name="select-filter" aria-label="Сортировка">
                 <option value="cheap">Сначала дешевые</option>
                 <option value="expensive">Сначала дорогие</option>
               </select>
             </div>
-
             <ul class="select-type-list">
               <li>
                 <a class="btn-type btn-type-blocks btn-type-current" href="#">
@@ -284,9 +274,7 @@
               </div>
             </li>
           </ul>
-
           <!-- pagination -->
-
           <ul class="pagination">
             <li>
               <a class="pagination-link pagination-link-current">1</a>
@@ -308,21 +296,18 @@
             </li>
           </ul>
         </section>
-
         <!-- subscribe -->
-
         <section class="subscribe subscribe-light" data-test="subscribe">
           <h2 class="subscribe-title title-main">Подпишитесь на рассылку</h2>
           <p class="subscribe-description description-main">Только полезная информация и никакого спама, честное
-            бойскаутское!</p>
+            бойскаутское!
+          </p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="subscribe-form-input" type="email" name="email" placeholder="Ваш e-mail" required>
             <button class="btn btn-secondary subscribe-button" type="submit">Подписаться</button>
           </form>
         </section>
-
       </main>
-
       <!-- footer -->
       <footer class="main-footer" data-test="footer">
         <ul class="footer-social">
@@ -342,11 +327,9 @@
             </a>
           </li>
         </ul>
-
         <address class="contacts">
           <a class="footer-tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
-
         <div class="footer-academy">
           <a class="footer-academy-link" href="https://htmlacademy.ru/">
             <svg class="footer-academy-image" aria-hidden="true" focusable="false" width="115" height="34"
@@ -375,7 +358,6 @@
               <path
                 d="M109.4 27.3564L105.8 18.4564H103.6L108.4 30.0564C108.1 30.9564 107.7 31.2564 106.7 31.2564H104.2V33.2564H106.7C108.5 33.2564 109.5 32.4564 110.2 30.6564L114.9 18.4564H112.8L109.4 27.3564Z" />
             </svg>
-
             <span class="visually-hidden">перейти на сайт htmlacademy</span>
           </a>
         </div>
