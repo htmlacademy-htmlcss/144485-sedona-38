@@ -109,7 +109,6 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
   background-color: #68A2CA;
 }
 
-
 .btn-secondary:active{
   color: rgba(255, 255, 255, 0.3);
   background-color: #82B3D3;
@@ -277,8 +276,7 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
   opacity: 0.6;
 }
 
-.main-icon:active
-{
+.main-icon:active{
   opacity: 0.3;
 }
 
@@ -561,7 +559,6 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
   background-position: center center;
   background-size: cover;
   background-color: #2672c3;
-
 }
 
 .subscribe-title{
@@ -883,7 +880,6 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
 
 .form-filter-price:nth-child(odd) .form-filter-price-input{
   border-radius: 4px 0 0 4px;
-
 }
 
 .form-filter-label{
@@ -915,7 +911,6 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
 .range-bar {
   height: 100%;
   position: absolute;
-
   background-color: #FFF;
 }
 
@@ -988,7 +983,6 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
 .form-filter-input[type="radio"]:checked + .radio-custom{
   background-image: url("../images/radio-icon.svg");
 }
-
 
 .form-label-text{
   line-height: 23px;
@@ -1227,7 +1221,6 @@ box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
   list-style-type: none;
   margin: 0;
   padding: 0;
-
 }
 
 .pagination-link{
