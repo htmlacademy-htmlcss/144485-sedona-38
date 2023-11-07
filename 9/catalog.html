@@ -3,7 +3,8 @@
 
   <head>
     <meta charset="utf-8">
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="styles/style.css">
     <title>HTML Academy: Седона - Каталог</title>
     <base href="https://htmlacademy-htmlcss.github.io/144485-sedona-38/9/">
@@ -16,7 +17,7 @@
     <div class="wrapper">
 
       <!-- header -->
-      <header class="main-header">
+      <header class="main-header" data-test="header">
         <nav class="main-navigation">
           <a class="main-logo" href="index.html">
             <img src="images/logo.svg" width="140" height="70" alt="Логотип City of Sedona.">
@@ -53,8 +54,9 @@
 
       <!-- main -->
 
-      <main class="main-inner">
-        <section class="filter-hotel">
+      <main class="main-inner" data-test="main">
+
+        <section class="filter-hotel" data-test="filter">
           <h1 class="filter-hotel-title">Гостиницы Седоны</h1>
 
           <!-- breadcrumbs -->
@@ -136,7 +138,9 @@
               </div>
               <div class="range-scale">
                 <div class="range-bar" style="left: 0; width: 80%;">
-                  <button class="range-button range-button-left" type="button"></button>
+                  <button class="range-button range-button-left" type="button">
+                    <span></span>
+                  </button>
                   <button class="range-button range-button-right" type="button"></button>
                 </div>
               </div>
@@ -149,7 +153,7 @@
 
         </section>
 
-        <section class="result-search">
+        <section class="result-search" data-test="catalog">
           <h2 class="visually-hidden">Результат поиска</h2>
           <div class="console-panel">
             <p class="console-panel-title title-main">Найдено гостиниц: 38</p>
@@ -164,17 +168,17 @@
             <ul class="select-type-list">
               <li>
                 <a class="btn-type btn-type-blocks btn-type-current" href="#">
-                  <span class="visually-hidden">плитка</span>
+                  <span class="visually-hidden">Плитка</span>
                 </a>
               </li>
               <li>
                 <a class="btn-type btn-type-horizontal" href="#">
-                  <span class="visually-hidden">горизонтальный блок</span>
+                  <span class="visually-hidden">Горизонтальный блок</span>
                 </a>
               </li>
               <li>
                 <a class="btn-type btn-type-list" href="#">
-                  <span class="visually-hidden">список</span>
+                  <span class="visually-hidden">Список</span>
                 </a>
               </li>
             </ul>
@@ -190,7 +194,9 @@
                   <h3 class="search-card-title">Amara Resort & Spa</h3>
                 </a>
                 <div class="search-card-contant">
-                  <span class="search-card-contant-title">Гостиница</span>
+                  <div class="search-contant-title">
+                    <span class="search-card-contant-title">Гостиница</span>
+                  </div>
                   <span>От 4000 ₽</span>
                 </div>
                 <div class="search-card-button">
@@ -213,12 +219,14 @@
                   <h3 class="search-card-title">Villas at Poco Diablo</h3>
                 </a>
                 <div class="search-card-contant">
-                  <span class="search-card-contant-title">Гостиница</span>
+                  <div class="search-contant-title">
+                    <span class="search-card-contant-title">Гостиница</span>
+                  </div>
                   <span>От 5000 ₽</span>
                 </div>
                 <div class="search-card-button">
                   <a class="btn btn-main btn-search-card" href="#">Подробнее</a>
-                  <button class="btn btn-secondary btn-search-card btn-active" type="button">В избранное</button>
+                  <button class="btn btn-secondary btn-search-card btn-active" type="button">В избранном</button>
                 </div>
                 <div class="card-rating-block">
                   <img src="images/stars-rating-four.svg" alt="Звезд рейтинга - четыре.">
@@ -236,7 +244,9 @@
                   <h3 class="search-card-title">Desert Quail Inn</h3>
                 </a>
                 <div class="search-card-contant">
-                  <span class="search-card-contant-title">Гостиница</span>
+                  <div class="search-contant-title">
+                    <span class="search-card-contant-title">Гостиница</span>
+                  </div>
                   <span>От 2500 ₽</span>
                 </div>
                 <div class="search-card-button">
@@ -259,7 +269,9 @@
                   <h3 class="search-card-title">GreenTree Inn</h3>
                 </a>
                 <div class="search-card-contant">
-                  <span class="search-card-contant-title">Гостиница</span>
+                  <div class="search-contant-title">
+                    <span class="search-card-contant-title">Гостиница</span>
+                  </div>
                   <span>От 1500 ₽</span>
                 </div>
                 <div class="search-card-button">
@@ -300,7 +312,7 @@
 
         <!-- subscribe -->
 
-        <section class="subscribe subscribe-light">
+        <section class="subscribe subscribe-light" data-test="subscribe">
           <h2 class="subscribe-title title-main">Подпишитесь на рассылку</h2>
           <p class="subscribe-description description-main">Только полезная информация и никакого спама, честное
             бойскаутское!</p>
@@ -313,7 +325,7 @@
       </main>
 
       <!-- footer -->
-      <footer class="main-footer">
+      <footer class="main-footer" data-test="footer">
         <ul class="footer-social">
           <li class="footer-social-item">
             <a class="icon-social icon-vk" href="https://vk.com/htmlacademy">
